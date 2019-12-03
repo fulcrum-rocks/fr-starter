@@ -1,0 +1,8 @@
+{
+  "*.{js,jsx}": [
+    "npm run lint:js",
+    "npm run lint:css",
+    "npm run pretty-quick",
+    "git add"
+  ]
+}

@@ -1,0 +1,9 @@
+[
+  "node_modules",
+  "build",
+  "config",
+  "coverage",
+  "src/serviceWorker.js",
+  "src/setupTests.js",
+  "scripts"
+]

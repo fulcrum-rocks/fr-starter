@@ -1,13 +1,14 @@
 {
   "name": "fr-starter",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Fulcrum project starter",
-  "main": "./lib/starter.js",
+  "main": "./lib/index.js",
   "bin": {
     "fr-starter": "./bin/index.js"
   },
   "scripts": {
-    "start": "./lib/starter.js",
+    "start": "node ./lib/index.js",
+    "test": "jest --watch --runInBand",
     "lint": "eslint lib/ --fix",
     "pretty-quick": "pretty-quick",
     "prettier": "prettier --write '**/*.js'"
@@ -24,9 +25,13 @@
       "pre-commit": "lint-staged"
     }
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "author": "O.Bespalko",
   "license": "MIT",
   "dependencies": {
+    "chalk": "^3.0.0",
     "cli-spinner": "^0.2.10",
     "inquirer": "^7.0.0",
     "node-emoji": "^1.10.0",
@@ -37,6 +42,7 @@
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
     "husky": "^3.1.0",
+    "jest": "^24.9.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "pretty-quick": "^2.0.1"
