@@ -1,0 +1,4 @@
+{
+  "styled-components": ["babel-plugin-styled-components"],
+  "node-sass": []
+}

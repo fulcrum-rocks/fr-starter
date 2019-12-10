@@ -1,0 +1,11 @@
+{
+  "start": "node server/index.js",
+  "dev": "cross-env NODE_ENV=development nodemon -w server -w package.json server/index.js",
+  "build": "next build",
+  "test": "jest && echo 'Testing is completed.'",
+  "test:watch": "jest --watch",
+  "test:coverage": "jest --coverage && echo 'Testing is completed.'",
+  "lint:js": "eslint --fix . && echo 'Linting is completed.'",
+  "prettier": "prettier --write '**/*.{js,jsx}'",
+  "pretty-quick": "pretty-quick"
+}

@@ -4,8 +4,6 @@
   "prettier",
   "lint-staged",
   "pretty-quick",
-  "enzyme",
-  "enzyme-adapter-react-16",
   "eslint",
   "eslint-config-airbnb",
   "eslint-config-prettier",
