@@ -1,0 +1,61 @@
+{
+  "styled-components": {
+    "devDependencies": [
+      "stylelint",
+      "stylelint-config-recommended",
+      "stylelint-config-styled-components",
+      "stylelint-processor-styled-components"
+    ],
+    "config": {
+      "processors": ["stylelint-processor-styled-components"],
+      "extends": [
+        "stylelint-config-recommended",
+        "stylelint-config-styled-components"
+      ]
+    },
+    "script": {
+      "name": "lint:styles",
+      "command": "stylelint './**/*.js'"
+    }
+  },
+  "node-sass": {
+    "devDependencies": [
+      "stylelint",
+      "stylelint-config-prettier",
+      "stylelint-config-recommended-scss",
+      "stylelint-scss"
+    ],
+    "config": {
+      "extends": [
+        "stylelint-config-recommended-scss",
+        "stylelint-config-prettier"
+      ],
+      "rules": {
+        "at-rule-empty-line-before": [
+          "always",
+          {
+            "except": ["first-nested", "after-same-name"]
+          }
+        ],
+        "custom-property-empty-line-before": [
+          "always",
+          {
+            "except": ["after-custom-property", "first-nested"]
+          }
+        ],
+        "declaration-empty-line-before": [
+          "always",
+          {
+            "except": ["after-declaration", "first-nested"]
+          }
+        ],
+        "block-closing-brace-empty-line-before": "never",
+        "rule-empty-line-before": ["always-multi-line"]
+      }
+    },
+    "script": {
+      "name": "lint:styles",
+      "command": "stylelint --config ./.stylelintrc.json --fix '**/*.scss'"
+    }
+  }
+}

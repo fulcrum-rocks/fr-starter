@@ -1,0 +1,10 @@
+[
+  "axios",
+  "dotenv",
+  "express",
+  "next",
+  "next-routes",
+  "prop-types",
+  "react",
+  "react-dom"
+]

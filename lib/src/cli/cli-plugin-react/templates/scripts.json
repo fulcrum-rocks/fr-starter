@@ -1,7 +1,6 @@
 {
   "build": "cross-env GENERATE_SOURCEMAP=false react-scripts build",
   "lint:js": "eslint --fix . && echo 'Linting is completed.'",
-  "lint:css": "echo 'Add some style linting'",
   "test:coverage": "npm test -- --coverage --watchAll=false",
   "prettier": "prettier --write '**/*.{js,jsx}'",
   "pretty-quick": "pretty-quick"

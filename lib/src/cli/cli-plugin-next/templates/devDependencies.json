@@ -1,0 +1,18 @@
+[
+  "cross-env",
+  "eslint",
+  "eslint-config-airbnb",
+  "eslint-config-airbnb-base",
+  "eslint-config-prettier",
+  "eslint-plugin-import",
+  "eslint-plugin-jsx-a11y",
+  "eslint-plugin-prettier",
+  "eslint-plugin-react",
+  "eslint-plugin-react-hooks",
+  "husky",
+  "jest",
+  "lint-staged",
+  "nodemon",
+  "prettier",
+  "pretty-quick"
+]
