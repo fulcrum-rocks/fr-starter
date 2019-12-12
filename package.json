@@ -1,6 +1,6 @@
 {
   "name": "fr-starter",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Fulcrum project starter",
   "main": "./lib/index.js",
   "bin": {
